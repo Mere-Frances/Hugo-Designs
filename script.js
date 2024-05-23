@@ -1005,8 +1005,6 @@ function populateProducts(productArray) {
                     <div class="swiper-slide">${imagesHtml}</div>
                 </div>
                 <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
             <h4 class="product-name">${productArray[i].name}</h4>
             <p class="product-desc">${productArray[i].description}<br>
@@ -1035,12 +1033,6 @@ function populateProducts(productArray) {
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
             },
         })
     });
@@ -1185,11 +1177,6 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
 });
 
 

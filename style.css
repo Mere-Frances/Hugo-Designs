@@ -249,6 +249,9 @@ nav .navbar .shop-icons {
   height: 100%;
   width: 100%;
 }
+.product-card .swiper .swiper-pagination-bullet {
+  background-color: #CC1C19;
+}
 .product-card .product-name {
   display: flex;
   align-items: center;
@@ -492,4 +495,10 @@ nav .navbar .shop-icons {
 .buttons .fly-to-button {
   width: 100%;
   height: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

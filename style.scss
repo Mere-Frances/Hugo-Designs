@@ -289,6 +289,10 @@ nav {
                 }
             }
         }
+
+        .swiper-pagination-bullet{
+            background-color:#CC1C19;
+        }
     }
     .product-name{
         display: flex;
@@ -546,5 +550,15 @@ nav {
     .fly-to-button{
         width: 100%;
         height: 70px;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .products-container {
+
+        grid-template-columns: repeat(2, 1fr);
     }
   }
