@@ -82,9 +82,10 @@ nav .navbar .shop-icons {
   display: flex;
   align-items: center;
   height: 15rem;
+  justify-content: space-between;
   padding-top: 5rem;
   color: white;
-  padding: 5rem 5rem 0 8rem;
+  padding: 5rem 15rem 0 8rem;
   gap: 40rem;
 }
 .shop-container .shop-header h2 {
