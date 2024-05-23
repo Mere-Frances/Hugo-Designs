@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/themes/smoothness/jquery-ui.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="nav-links">
+                <a class="nav-link" href="">Home</a>
+                <a class="nav-link active" href="">Shop</a>
+                <a class="nav-link" href="">Story</a>
+                <a class="nav-link" href="">Social</a>
+            </div>
+            <div class="shop-icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+            </div>
+            <div class="logo-tag"></div>
+        </div>
+    </nav>
+
+    <div id="top" class="shop-container">
+        <div class="shop-header">
+            <h2>Shop all prints</h2>
+            <div class="sub-header">
+                <h3>Download only</h3>
+                <p>All digital prints</p>
+            </div>
+        </div>
+        <div class="brand-filter">
+            <p>Brands:</p>
+            <a class="brand brand-filter-items" id="toyota">Toyota</a>
+            <a class="brand brand-filter-items" id="landRover">Land Rover</a>
+            <a class="brand brand-filter-items" id="porsche">Porsche</a>
+            <a class="brand brand-filter-items" id="broncoCar">Bronco</a>
+            <a class="brand brand-filter-items" id="limited">Limited</a>
+            <div class="search">
+                <div class="wave-group">
+                    <input class="input" type="text" required="" />
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span style="--index: 0" class="label-char">S</span>
+                        <span style="--index: 1" class="label-char">E</span>
+                        <span style="--index: 2" class="label-char">A</span>
+                        <span style="--index: 3" class="label-char">R</span>
+                        <span style="--index: 3" class="label-char">C</span>
+                        <span style="--index: 3" class="label-char">H</span>
+                    </label>
+                </div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="content-price">
+            <p>Sort:</p>
+            <a id="sortPop" class="filter-item">Most popular</a>
+            <a id="priceMin" class="filter-item" value="lowest">Lowest price</a>
+            <a id="priceMax" class="filter-item">Highest price</a>
+            <a id="removeAll" class="filter-item">Remove filters</a>
+        </div>
+
+    </div>
+
+
+    <div id="products" class="products-container">
+    </div>
+
+    <a href="#top" class="scroll-shortcut">
+        <div class="dialog-box">
+            <svg width="213" height="40" viewBox="0 0 213 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="192.712" height="39.5881" rx="14" fill="#8A1111" />
+                <path
+                    d="M212.658 19.9119C205.658 32.9119 189.647 39.5 179.5 39.5L190.5 6.5C194 13.5 201.698 22.9119 212.658 19.9119Z"
+                    fill="#8A1111" />
+            </svg>
+            <p>Go back up please</p>
+        </div>
+        <img class="tire-svg" src="./images/tire.svg">
+    </a>
+
+
+
+    <div id="foo" class="slide-container">
+        <div class="slide">
+            <!-- MapBox is looking for a container -->
+            <div class="map-container">
+                <div id="map"></div>
+                <div id="pins" class="pins"></div>
+            </div>
+            <div id="buttons" class="buttons"><!-- Fly to button --></div>
+            <button class="close-map map-button" onclick="closeFunction()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <button class="open-map map-button" onclick="myFunction()"><i class="fa-solid fa-hand-point-left"></i></button>
+    </div>
+
+
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/40be05a600.js" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.3/jquery-ui.min.js"></script>
+    <!-- my script -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
